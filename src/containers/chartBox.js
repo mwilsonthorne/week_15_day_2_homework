@@ -36,6 +36,8 @@ class ChartBox extends Component {
   render(){
     return (
       <div>
+        <h1>UK Top 20</h1>
+        <h2>Find out more about each song from the menu below</h2>
         <ChartList
           songs={this.state.songs}
           onSongSelected={this.handleSongSelected}
