@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const ChartList = (props) => {
 
   const options = props.songs.map((song, index) => {
-    return <option value={index} key={index}>{song.feed}</option>
+    return <option value={index} key={index}>{song['im:name'].label}</option>
   })
 
   function handleChange(event) {
